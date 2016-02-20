@@ -102,5 +102,4 @@ end
 
 ## TODOs
 
-* Find a way to test this plugin and write tests
 * Update DSL to look more like `fab_deploy.crontab` (e.g. `crontab.add_line`)
