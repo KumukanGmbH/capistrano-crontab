@@ -42,7 +42,7 @@ module Capistrano
       crontab_add_line(content, marker)
     end
 
-    def crontab_marker(marker)
+    def crontab_marker(marker = nil)
       marker.nil? ? "" : " # MARKER:%s" % [marker]
     end
   end
