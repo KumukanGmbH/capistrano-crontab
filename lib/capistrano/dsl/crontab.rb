@@ -24,12 +24,12 @@ module Capistrano
 
     def crontab_add_line(content, marker = nil)
       old_crontab = crontab_get_content
-      marker = _crontab_marker(marker)
+      marker = crontab_marker(marker)
       crontab_set_content("#{old_crontab.rstrip}\n#{content}#{marker}")
     end
 
     def crontab_remove_line(marker)
-      marker = _crontab_marker(marker)
+      marker = crontab_marker(marker)
 
       lines = crontab_get_content.split("\n")
         .reject { |line| line.end_with?(marker) }
@@ -42,7 +42,7 @@ module Capistrano
       crontab_add_line(content, marker)
     end
 
-    def _crontab_marker(marker)
+    def crontab_marker(marker)
       marker.nil? ? "" : " # MARKER:%s" % [marker]
     end
   end
