@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.description = "Crontab DSL for Capistrano."
   gem.summary = "Capistrano plugin for crontab DSL extension, to add/update/remove cronjobs."
   gem.homepage = "https://github.com/KumukanGmbH/capistrano-crontab"
+  gem.license = "MIT"
 
   gem.files = `git ls-files`.split($/)
   gem.executables = gem.files.grep(%r{bin/}).map { |f| File.basename(f) }
