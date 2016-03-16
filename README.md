@@ -1,6 +1,7 @@
 # Capistrano::Crontab
 
 [![Gem Version](https://badge.fury.io/rb/capistrano-crontab.svg)](https://badge.fury.io/rb/capistrano-crontab)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/KumukanGmbH/capistrano-crontab/master/LICENSE.txt)
 
 This capistrano plugin is inspired by [fab_deploy.crontab](https://bitbucket.org/kmike/django-fab-deploy/src/9c07813e136bf3e059684b4205e0577973c157b4/fab_deploy/crontab.py?at=default&fileviewer=file-view-default)
 and allows you to add, remove and update cronjobs in your crontab.
